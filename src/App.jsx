@@ -405,11 +405,16 @@ export default function App() {
 
       <header className="relative z-10 px-6 pb-14 pt-8">
         <nav className="mx-auto flex max-w-6xl items-center justify-between">
-          <div className="brand" aria-label="A.V.A logo">
-            <span className="logo-frame" aria-hidden="true" />
-            <span className="logo-sigil" aria-hidden="true" />
-            <span className="logo-text">A.V.A</span>
-          </div>
+          <a className="brand" href="#top" aria-label="A.V.A logo">
+            <span className="logo-emblem" aria-hidden="true">
+              <span className="logo-emblem-inner">
+                <span>A</span>
+                <span>V</span>
+                <span>A</span>
+              </span>
+            </span>
+            <span className="logo-name">A.V.A</span>
+          </a>
           <div className="nav-links">
             <a href="#cash-support">Cash Support</a>
             <a href="#wishlist">Wishlist</a>
