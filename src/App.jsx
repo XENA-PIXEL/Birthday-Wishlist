@@ -406,12 +406,21 @@ export default function App() {
       <header className="relative z-10 px-6 pb-14 pt-8">
         <nav className="mx-auto flex max-w-6xl items-center justify-between">
           <a className="brand" href="#top" aria-label="A.V.A logo">
-            <span className="logo-emblem" aria-hidden="true">
-              <span className="logo-emblem-inner">
-                <span>A</span>
-                <span>V</span>
-                <span>A</span>
-              </span>
+            <span className="logo-sigil" aria-hidden="true">
+              <svg viewBox="0 0 64 64" role="presentation">
+                <polygon
+                  className="sigil-frame"
+                  points="32 6 54 18 54 46 32 58 10 46 10 18"
+                />
+                <circle className="sigil-ring" cx="32" cy="32" r="16" />
+                <path className="sigil-axis" d="M32 12v40M12 32h40" />
+                <path className="sigil-axis" d="M18 20l28 24M46 20l-28 24" />
+                <circle className="sigil-core" cx="32" cy="32" r="4" />
+                <circle className="sigil-node" cx="32" cy="6" r="2" />
+                <circle className="sigil-node" cx="54" cy="32" r="2" />
+                <circle className="sigil-node" cx="32" cy="58" r="2" />
+                <circle className="sigil-node" cx="10" cy="32" r="2" />
+              </svg>
             </span>
             <span className="logo-name">A.V.A</span>
           </a>
