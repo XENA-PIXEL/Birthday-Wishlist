@@ -1,19 +1,31 @@
 ﻿import { useEffect, useMemo, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import heroImg from "./assets/hero.jpg";
+import luxCakeImg from "./assets/lux-cake.jpg";
+import luxCoatImg from "./assets/lux-coat.jpg";
+import luxGiftImg from "./assets/lux-gift.jpg";
+import deviceImg from "./assets/device.jpg";
+import essentialsImg from "./assets/essentials.jpg";
+import tradingImg from "./assets/trading.jpg";
+import financeBooksImg from "./assets/finance-books.jpg";
+import spiritualImg from "./assets/spiritual.jpg";
+import cyberEssentialsImg from "./assets/cyber-essentials.jpg";
+import cyberImg from "./assets/cyber.jpg";
+import workspaceImg from "./assets/workspace.jpg";
 
 const images = {
-  hero: "src/assets/hero.jpg",
-  luxCake: "src/assets/lux-cake.jpg",
-  luxCoat: "src/assets/lux-coat.jpg",
-  luxGift: "src/assets/lux-gift.jpg",
-  device: "src/assets/device.jpg",
-  essentials: "src/assets/essentials.jpg",
-  trading: "src/assets/trading.jpg",
-  financeBooks: "src/assets/finance-books.jpg",
-  spiritual: "src/assets/spiritual.jpg",
-  cyberEssentials: "src/assets/cyber-essentials.jpg",
-  cyber: "src/assets/cyber.jpg",
-  workspace: "src/assets/workspace.jpg"
+  hero: heroImg,
+  luxCake: luxCakeImg,
+  luxCoat: luxCoatImg,
+  luxGift: luxGiftImg,
+  device: deviceImg,
+  essentials: essentialsImg,
+  trading: tradingImg,
+  financeBooks: financeBooksImg,
+  spiritual: spiritualImg,
+  cyberEssentials: cyberEssentialsImg,
+  cyber: cyberImg,
+  workspace: workspaceImg
 };
 
 const whatsappMessage = encodeURIComponent(
@@ -624,3 +636,4 @@ export default function App() {
     </div>
   );
 }
+
